@@ -14,7 +14,7 @@
     <% if logged? %>
     <%= link_to "Salir", session_path(current_user.id), method: :delete %>
         <% else %>
-          <%= link_to 'Iniciar Sesion', users_sign_up_path %>
+          <%= link_to 'Iniciar Sesion', users_sign_in_path %>
           <%= link_to 'Registrarse', users_sign_up_path %>    
         <% end %>
       <ul class="nav navbar-nav">
